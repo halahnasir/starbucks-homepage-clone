@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+$primary-color: #006241;
+$secondary-color: #d50032;
+$extra-color: #d4e9e2;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #000;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  p {
+    margin: 5px 0;
+    line-height: 1.7;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  section {
+    a {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  //Utility Classes
+  // Buttons
+
+  .btn {
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 55px;
+    padding: 7px 16px;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn-dark-outline {
+    border-color: #000;
+    color: #000;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .btn-line-outline {
+    border-color: #fff;
+    color: #fff;
+
+    &:hover {
+      background: lightgrey;
+    }
+  }
+
+  .btn-dark {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background: #333;
+    }
+  }
+
+  //Box
+  .box {
+    margin-bottom: 30px;
+  }
+
+  .box-inner {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  //Backgrounds
+
+  .bg-primary {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  .bg-secondary {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+
+  .bg-extra {
+    background-color: $extra-color;
+    color: #000;
+  }
+
+  // .bg-dark {
+  //   background-color: $dark-color;
+  //   color: #000;
+  // }
+
+  // Text Styling
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-xl {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .text-md {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .text-sm {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  // Padding
+  .py-sm {
+    padding: 10px 0;
+  }
+
+  .py-md {
+    padding: 20px 0;
+  }
+
+  .py-lg {
+    padding: 40px 0;
+  }
+
+  //Media Queries
+  @media screen and (max-width: 960px) {
+    .text-xl {
+      font-size: 30px;
+    }
+    .text-lg {
+      font-size: 25px;
+    }
+    .text-md {
+      font-size: 19px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .box {
+      max-width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

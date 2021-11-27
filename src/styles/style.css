@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.4;
+  color: #000;
+}
+
+html a,
+body a {
+  color: #000;
+  text-decoration: none;
+}
+
+html ul,
+body ul {
+  list-style: none;
+}
+
+html p,
+body p {
+  margin: 5px 0;
+  line-height: 1.7;
+}
+
+html img,
+body img {
+  max-width: 100%;
+}
+
+html section a,
+body section a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+html .btn,
+body .btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px solid #000;
+  border-radius: 55px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+html .btn-dark-outline,
+body .btn-dark-outline {
+  border-color: #000;
+  color: #000;
+}
+
+html .btn-dark-outline:hover,
+body .btn-dark-outline:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+html .btn-line-outline,
+body .btn-line-outline {
+  border-color: #fff;
+  color: #fff;
+}
+
+html .btn-line-outline:hover,
+body .btn-line-outline:hover {
+  background: lightgrey;
+}
+
+html .btn-dark,
+body .btn-dark {
+  background-color: #000;
+  color: #fff;
+}
+
+html .btn-dark:hover,
+body .btn-dark:hover {
+  background: #333;
+}
+
+html .box,
+body .box {
+  margin-bottom: 30px;
+}
+
+html .box-inner,
+body .box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+html .bg-primary,
+body .bg-primary {
+  background-color: #006241;
+  color: #fff;
+}
+
+html .bg-secondary,
+body .bg-secondary {
+  background-color: #d50032;
+  color: #fff;
+}
+
+html .bg-extra,
+body .bg-extra {
+  background-color: #d4e9e2;
+  color: #000;
+}
+
+html .text-center,
+body .text-center {
+  text-align: center;
+}
+
+html .text-xl,
+body .text-xl {
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+html .text-md,
+body .text-md {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+html .text-sm,
+body .text-sm {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+html .py-sm,
+body .py-sm {
+  padding: 10px 0;
+}
+
+html .py-md,
+body .py-md {
+  padding: 20px 0;
+}
+
+html .py-lg,
+body .py-lg {
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 960px) {
+  html .text-xl,
+  body .text-xl {
+    font-size: 30px;
+  }
+  html .text-lg,
+  body .text-lg {
+    font-size: 25px;
+  }
+  html .text-md,
+  body .text-md {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  html .box,
+  body .box {
+    max-width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3), 0 2px 2px rgba(128, 128, 128, 0.01), 0 0 2px rgba(128, 128, 128, 0.4);
+          box-shadow: 0 1px 3px rgba(128, 128, 128, 0.3), 0 2px 2px rgba(128, 128, 128, 0.01), 0 0 2px rgba(128, 128, 128, 0.4);
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.navbar ul a {
+  color: #000;
+}
+
+.navbar ul a:hover {
+  color: #006241;
+}
+
+.navbar .navbar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .navbar-container .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar .navbar-container .navbar-nav-left {
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-left: 20px;
+}
+
+.navbar .navbar-container .navbar-nav-right li a img {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.navbar .navbar-container .navbar-nav-right li:first-child a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navbar-container .navbar-nav-right li:nth-child(2) {
+  margin: 0 5px;
+}
+/*# sourceMappingURL=style.css.map */

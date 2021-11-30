@@ -196,15 +196,22 @@ body {
     .grid-reversed:first-child {
       order: 0;
     }
+    body {
+      .navbar {
+        .navbar-container {
+          .navbar-brand {
+            width: 40px;
+            height: 40px;
+          }
+          .navbar-nav-right,
+          .navbar-nav-left {
+            display: none;
+          }
 
-    .navbar {
-      .navbar-brand {
-        width: 40px;
-        height: 40px;
-      }
-      .navbar-nav-right,
-      .navbar-nav-left {
-        display: none;
+          .hamburger {
+            display: block;
+          }
+        }
       }
     }
 

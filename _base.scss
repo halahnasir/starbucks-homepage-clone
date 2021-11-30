@@ -66,12 +66,12 @@ body {
     }
   }
 
-  .btn-line-outline {
+  .btn-light-outline {
     border-color: #fff;
     color: #fff;
 
     &:hover {
-      background: lightgrey;
+      background: rgba(0, 0, 0, 0.06);
     }
   }
 
@@ -92,6 +92,18 @@ body {
   .box-inner {
     max-width: 700px;
     margin: 0 auto;
+  }
+
+  .box-text {
+    max-width: 500px;
+    text-align: center;
+    justify-self: center;
+    padding: 20px 0;
+    margin: 0 auto;
+
+    .btn {
+      margin-top: 20px;
+    }
   }
   //Backgrounds
 
@@ -152,6 +164,17 @@ body {
     padding: 40px 0;
   }
 
+  .grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .grid-reversed:first-child {
+    order: 2;
+  }
   //Media Queries
   @media screen and (max-width: 960px) {
     .text-xl {
@@ -165,11 +188,43 @@ body {
     }
   }
 
+  @media screen and (max-width: 768px) {
+    .grid-col-2 {
+      grid-template-columns: 1fr;
+    }
+
+    .grid-reversed:first-child {
+      order: 0;
+    }
+
+    .navbar {
+      .navbar-brand {
+        width: 40px;
+        height: 40px;
+      }
+      .navbar-nav-right,
+      .navbar-nav-left {
+        display: none;
+      }
+    }
+
+    .footer {
+      .social {
+        justify-content: center;
+      }
+      text-align: center;
+    }
+  }
+
   @media screen and (min-width: 1440px) {
     .box {
       max-width: 1440px;
       margin-right: auto;
       margin-left: auto;
+    }
+
+    .divider {
+      max-width: 90%;
     }
   }
 }
